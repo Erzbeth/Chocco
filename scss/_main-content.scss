@@ -1,0 +1,50 @@
+.main__content {
+    //display: flex;
+   // align-items: center;
+    
+   
+}
+
+.main__content-right {
+    //display: flex;
+   // align-items: center;
+}
+.why {
+    display: flex;
+    align-items: center;
+    margin: 4px; /* Отступы вокруг элемента */
+    //margin: 20%; 
+    padding: 10px; /* Поля вокруг текста */
+    justify-content: space-between
+}
+
+.why__list {
+    display: flex;
+    align-items: center;
+}
+
+
+.why__item {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    color: whitef;
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color:transparent;
+}
+
+
+.why__item-text{
+    color: #fff;
+}
+
+.whyImage {
+   // float: left;
+    margin: 2px;
+    width: 54px;
+
+}
+.main__content-left {
+    display: flex;
+    align-items: center;
+}

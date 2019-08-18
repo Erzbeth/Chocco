@@ -2,27 +2,37 @@
     display: flex;
     align-items: center;
 }
-
 .nav__list {
     display: flex;
     align-items: center;
 }
 
-nav__item {
+.nav__item {
     display: flex;
     align-items: center;
-    &:after {
+    margin-right: 15px;
+
+    &::after {
         content:  "";
         width: 4px;
         height: 4px;
         background: #fff;
         border-radius: 50%;
         display: block;
-
+        margin-left: 15px;
     } 
+
+
+    &:last-child {
+        margin-right: 0;
+        &:after{
+            display: none;
+        }
+    }
 }
 
-nav__link {
+
+.nav__link {
     text-decoration: none;
     color: #fff;
     font-style: 13px;

@@ -5,14 +5,15 @@ $green: #0f5a47;
 $dark-green: #0b4d3c;
 
 //normalize
-@import "normalize.scss";
+@import "normalize";
 //setup
-
-@import "layouts/base";
-@import "layouts/fonts";
+//@import "layouts/normalize";
+@import "../layouts/base";
+//@import "layouts/fonts";
 //add files scss
-@import "scss/section.scss";
-@import "scss/welcome.scss";
-@import "scss/header.scss";
-@import "scss/nav.scss";
 
+@import "header";
+@import "nav";
+@import "section";
+@import "welcome";
+@import "main-content";
