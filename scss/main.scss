@@ -1,0 +1,18 @@
+$light-blue:#61c4d9;
+$dark-blue:#00accf;
+$black:#2f3234;
+$green: #0f5a47;
+$dark-green: #0b4d3c;
+
+//normalize
+@import "normalize.scss";
+//setup
+
+@import "layouts/base";
+@import "layouts/fonts";
+//add files scss
+@import "scss/section.scss";
+@import "scss/welcome.scss";
+@import "scss/header.scss";
+@import "scss/nav.scss";
+

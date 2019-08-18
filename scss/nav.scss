@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+nav__item {
+    display: flex;
+    align-items: center;
+    &:after {
+        content:  "";
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+
+    } 
+}
+
+nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-style: 13px;
+}
