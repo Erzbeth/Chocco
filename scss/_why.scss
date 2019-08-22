@@ -1,0 +1,24 @@
+& why { 
+    background: url('../img/bg/why_bg.jpg') center center / cover no-repeat;
+ }
+ .why__list {
+     display: flex;
+     
+ }
+
+ .why__item {
+    flex: 1;
+    margin-right: 35px;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+
+    }
+   
+ }
+ .why__img {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 34px;
+}

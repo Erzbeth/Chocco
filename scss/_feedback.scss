@@ -1,0 +1,17 @@
+& feedback {
+    display: flex;
+
+
+
+    .feedback-people {
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+
+}
+.round {
+    border-radius: 50%;
+}
+
+

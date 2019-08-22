@@ -1,25 +1,31 @@
-.main__content {
+.welcome__content {
     display: flex;
     align-items: center;
-    
    
-}
 
-.main__content-left {
-    display: flex;
-    align-items: center;
+    .welcome__content-right{
+        width: 50%;
+
+    }
+    .welcome__content-left {
+        
+        display: flex;
+        align-items: center;
+        width: 50vw;
+        height: 50vh;
+    }
 }
 .ordered__button {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
+    border-radius: 50px;
     border: solid 1px #1A4575;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: #3A68A1;
-    color: #fee1cc;
+    background: #fff;
+    color: #0f5a47;
     text-decoration: none;
     padding: 8px 12px;
     text-decoration: none;
@@ -27,10 +33,11 @@
   }
   
   a.ordered__button:hover {
-    text-decoration: underline;
     background: #4479BA;
     border: solid 1px #20538D;
-.why {
+  }
+
+.about {
     display: flex;
     align-items: center;
     margin: 4px; /* Отступы вокруг элемента */
@@ -39,13 +46,13 @@
     justify-content: space-between
 }
 
-.why__list {
+.about__list {
     display: flex;
     align-items: center;
 }
 
 
-.why__item {
+.about__item {
     display: flex;
     align-items: center;
     margin: 4px;
@@ -55,16 +62,13 @@
 }
 
 
-.why__item-text{
+.about__item-text{
     color: #fff;
 }
 
-.whyImage {
-   // float: left;
+.aboutImage {
+// float: left;
     margin: 2px;
     width: 54px;
 
-}
-.main__content-right {
-    align-items: right;
 }
