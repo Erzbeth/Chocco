@@ -1,4 +1,5 @@
-.header{
+@mixin header{
+    @include centerFlex;
     display: flex;
     align-items: center;
     justify-content: space-between;

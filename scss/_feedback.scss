@@ -1,4 +1,5 @@
 .feedback {
+    background: url('../img/bg/review_bg.png') center center / cover no-repeat;
     display: flex;
 
 }
@@ -32,11 +33,7 @@
     
 
 }
-.feedback-people-round {
-    border-radius: 50%;
-    float:left; 
-    overflow:hidden;
 
-}
-
-
+.feedback__avatar {
+    @include square(100px, $radius: 4px);
+  }

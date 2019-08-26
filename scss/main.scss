@@ -3,6 +3,7 @@ $dark-blue:#00accf;
 $black:#2f3234;
 $green: #0f5a47;
 $dark-green: #0b4d3c;
+$white: #fff;
 
 $regular: 'Alegreya-Reg', 'Arial', sans-serif;
 $bold: 'Alegreya-Bold', 'Arial', sans-serif;
@@ -39,3 +40,4 @@ $phones-small: 370px;
 @import "order";
 @import "form";
 @import "form-checkRadio";
+@import "mixins";
