@@ -1,17 +1,42 @@
-& feedback {
+.feedback {
     display: flex;
 
+}
 
-
-    .feedback-people {
-        flex-direction: row;
-        justify-content: space-around;
-    
-    }
+.feedback__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
-.round {
+.feedback__subtitle{
+    margin: 10px;
+}
+.feedback__name {
+    margin-top: 10px;
+}
+.feedback__wrapper1 {
+    display: flex;
+}
+.feedback__wrapper2 {
+    display: flex;
+}
+.feedback__wrapper3 {
+    display: flex;
+}
+
+.feedback-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.feedback-people-round {
     border-radius: 50%;
+    float:left; 
+    overflow:hidden;
+
 }
 
 

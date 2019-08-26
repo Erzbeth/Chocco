@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,14 @@
     <title>Chocco</title>
 
 </head>
+
 <body>
     <section class="section welcome">
-        <div class="container">
+        <div class="container welcome__container">
             <header class="header">
-                <div class="welcome-logo">CHO CCO</div>
+                <div class="header-logo">
+                    <img src="./img/bg/logo.png" alt="Chocco" class="header__logo-img">
+                </div>
                 <div class="header__buttons">
                     <nav class="nav">
                         <ul class="nav__list">
@@ -36,96 +40,105 @@
                             <li class="nav__item">
                                 <a href="#" class="nav__link">Контакты</a></li>
                         </ul>
-                    </nav> 
-                    <!-- вопрос, этот номер телефона и контакты - как то пересекаются? и -->
-                    <div class="hotline">
-                        <img src="" alt="">
-                        <a href="#" class="hotline-btn">8 800 903 90 90</a>
-                    </div>   
+                    </nav>
+                </div>
+                <div class="header__phone">
+                    <img src="" alt="">
+                    <a href="tel:88009039090" class="header__phone-btn">8 800 903 90 90</a>
                 </div>
             </header>
-        </div>
-        <div class="welcome__content"> 
-            <div class="welcome__content-right">
-                <div class="welcome__title title">
-                    <h2>НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
-                </div>
-                <div class="welcome__subtitle">
-                    Наши батончики идеально подходят для тех, кто следитза своим здоровьем
-                </div>
-                <a href="#" class="ordered__button">ЗАКАЗАТЬ</a>
 
-                <div class="about">
-                    <ul class="about__list">
-                        <li class = "about__item">
-                            <img src="./img/icons/5.svg" alt="nature-products" class="aboutImage">
-                            <span>100% натуральный продукт</span>
-                        </li>
-                        <li class = "about__item">
-                            <img src="./img/icons/6.svg" alt="delivery" class="aboutImage">
-                            <span>3-5 дней доставка по РФ</span>
-                        </li>
-                        <li class = "about__item">
-                            <img src="./img/icons/4.svg" alt="lose-weight" class="aboutImage">
-                            <span class="about__item-text">Не портит фигуру</span>
-                        </li>
-                    </ul>
+            <div class="welcome__content">
+                <div class="welcome__content-left">
+
+                    <div class="welcome__title-wrapper">
+                        <div class="welcome__title title">
+                            <h2 class="title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
+                        </div>
+                        <div class="welcome__subtitle">
+                            Наши батончики идеально подходят для тех, кто следитза своим здоровьем
+                        </div>
+                        <a href="#" class="ordered__button">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="about">
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <img src="./img/icons/5.svg" alt="nature-products" class="aboutImage">
+                                <span>100% натуральный продукт</span>
+                            </li>
+                            <li class="about__item">
+                                <img src="./img/icons/6.svg" alt="delivery" class="aboutImage">
+                                <span>3-5 дней доставка по РФ</span>
+                            </li>
+                            <li class="about__item">
+                                <img src="./img/icons/4.svg" alt="lose-weight" class="aboutImage">
+                                <span class="about__item-text">Не портит фигуру</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
-            </div>
-                
-            <div class="welcome__content-left">
-                <img src="./img/bg/candy.png" alt="Chocco">
+                <div class="welcome__content-right">
+                    <img src="./img/bg/candy.png" alt="Chocco">
+                </div>
             </div>
         </div>
     </section>
 
 
     <section class="section why">
-        <div class="why_container">
-            <div class="title">ПОЧЕМУ CHOCCO?</div>
-            <div class="why__text">В нашем мире все происходит очень быстро, поэтому мы
-                делаем батончики,которые удобно взять с собой.
+        <div class="container why__container">
+            <div class="why__content-title">
+                <div class="title">ПОЧЕМУ CHOCCO?</div>
+                <div class="why__text">В нашем мире все происходит очень быстро, поэтому мы
+                    делаем батончики, которые удобно взять с собой.
+                </div>
             </div>
             <ul class="why__list">
                 <li class="why__item">
-                    <div class="why__img">
-                        <img src="./img/icons/1.svg" alt="" class="why__picture-icon">
-                    </div>
-                        <div class="why__because">
-                            <div class="why__title">Полезно</div>
-                            <div class="why__because-text">
-                                <p>
-                                    Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты.
-                                </p>
-                            </div>
+                    <div class="why__item-wrapper">
+                        <div class="why__img">
+                            <img src="./img/icons/1.svg" alt="" class="why__img-icon">
                         </div>
+                    </div>
+
+                    <div class="why__because">
+                        <div class="why__title">Полезно</div>
+                        <div class="why__because-text">
+                            <p>
+                                Натуральность - ключевое качество нашей продукции. Мы используем только природные
+                                ингредиенты.
+                            </p>
+                        </div>
+                    </div>
                 </li>
                 <li class="why__item">
                     <div class="why__img">
-                        <img src="./img/icons/2.svg" alt="">
+                        <img src="./img/icons/3.svg" alt="" class="why__img-icon">
                     </div>
-                        <div class="why__because">
-                            <div class="why__title">Вкусно</div>
-                            <div class="why__because-text">
-                                <p>
-                                        Нежный, ненавязчивый, сытный - так клиенты описывают вкусовые качества нашего батончика</div>
-                                </p>
-                            </div>
+                    <div class="why__because">
+                        <div class="why__title">Вкусно</div>
+                        <div class="why__because-text">
+                            <p>
+                                Нежный, ненавязчивый, сытный - так клиенты описывают вкусовые качества нашего батончика
                         </div>
+                        </p>
+                    </div>
+
                 </li>
                 <li class="why__item">
                     <div class="why__img">
-                        <img src="./img/icons/3.svg" alt="">
+                        <img src="./img/icons/2.svg" alt="" class="why__img-icon">
                     </div>
-                        <div class="why__because">
-                            <div class="why__title">Питательно</div>
-                            <div class="why__because-text">
-                                <p>
-                                    Высокое содержание качественного белка, а так же всех необходимых витаминов и минералов.</div>
-                                </p>
-                            </div>
+                    <div class="why__because">
+                        <div class="why__title">Питательно</div>
+                        <div class="why__because-text">
+                            <p>
+                                Высокое содержание качественного белка, а так же всех необходимых витаминов и минералов.
+                            </p>
                         </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -145,18 +158,18 @@
                 <p>Какой нибудь замечательный текст... </p>
             </article>
         </div>
-    
+
         <div class="team__container">
             <img src="./img/bg/team-bg1.jpg" alt="" class="team__image">
             <a href="#team__name">Борис Федорович</a>
             <span class="team_position">Главный технолог</span>
-            <p>Отвечает за вкусовые качества  и калорийность. </p>
+            <p>Отвечает за вкусовые качества и калорийность. </p>
         </div>
         <div class="team__container">
             <img src="./img/bg/team-bg2.jpg" alt="" class="team__image">
             <a href="#team__name">Алла Иванова</a>
             <span class="team_position">Специалист по упаковке </span>
-            <p>Автор запоминающегося стиля  наших батончиков. </p>
+            <p>Автор запоминающегося стиля наших батончиков. </p>
         </div>
         <div class="team__container">
             <img src="./img/bg/team-bg3.jpg" alt="" class="team__image">
@@ -168,58 +181,84 @@
             <img src="./img/bg/team-bg4.jpg" alt="" class="team__image">
             <a href="#team__name">Мила Рыжкова</a>
             <span class="team_position">PR, маркетинг </span>
-            <p>По всем вопросам сотрудничества  и рекламы писать только Миле.           </p>
+            <p>По всем вопросам сотрудничества и рекламы писать только Миле. </p>
         </div>
     </section>
 
     <section class="section menu">
         <img src="" alt="" class="menu__title">
-        
+
     </section>
 
     <section class="section feedback">
-        <div class="feedback title">Отзывы</h2>
-        <div class="container-feedback">
-            <div class="feedback__image">
-                <img src="./img/bg/review_photo.jpg" alt="Avatar">
-            </div>
-            <div class="feedback-title">Лучший перекус</div>  
-            <div class="feedback-subtitle">
-                Я ем малыми пропорциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером
-                    и часто отходить в кафе или на кухню просто не могу себе позволить. 
-                А батончик - он всегда под рукой. Это приятно и удобно.
-            </div>
-            <div class="feedback-name">Алена Хмельницкая</div>
-            <div class="feedback__image">
-                    <img src="./img/bg/review_2.jpg" alt="Avatar">
+        <div class="container">
+            <h2 class="feedback title">Отзывы</h2>
+            <div class="feedback__content">
+
+                <div class="feedback__wrapper1">
+                    <div class="feedback__image">
+                        <img src="./img/bg/review_photo.jpg" alt="Avatar">
+                    </div>
+                    <div class="feedback__wrapper-content1">
+                        <div class="title feedback__title">Лучший перекус</div>
+                        <div class="feedback__subtitle">
+                            Я ем малыми пропорциями, но часто. Это повышает мою продуктивность в разы. В течение дня
+                            сижу за
+                            компьютером
+                            и часто отходить в кафе или на кухню просто не могу себе позволить.
+                            А батончик - он всегда под рукой. Это приятно и удобно.
+                        </div>
+                        <div class="feedback__name">Алена Хмельницкая</div>
+                    </div>
                 </div>
-                <div class="feedback-title">Лучшие батончики премиум уровня</div>  
-                <div class="feedback-subtitle">
-                        Батончики понравились. На мой взгляд слегка завышена цена по ср
+
+                <div class="feedback__wrapper2">
+                    <div class="feedback__image">
+                        <img src="./img/bg/review_2.jpg" alt="Avatar">
+                    </div>
+                    <div class="feedback__wrapper-content">
+                        <div class="title feedback__title">Лучшие батончики премиум уровня</div>
+                        <div class="feedback__subtitle">
+                            Батончики понравились. На мой взгляд слегка завышена цена по ср
+                        </div>
+                        <div class="feedback__name">Мария Орлова</div>
+                    </div>
                 </div>
-                <div class="feedback-name">Мария Орлова</div>
-            </div>
-            <div class="feedback__image">
-                    <img src="./img/bg/review_1.jpg" alt="Avatar">
+                <div class="feedback__wrapper3">
+                    <div class="feedback__image">
+                        <img src="./img/bg/review_1.jpg" alt="Avatar">
+                    </div>
+                    <div class="feedback__wrapper-content">
+                        <div class="title feedback__title">Идеально подходят для спортсменов</div>
+                        <div class="feedback__subtitle">
+                            После тренировок всегда хочется быстро закинуться чем-то белков
+                        </div>
+                        <div class="feedback__name">Вадим Грачев</div>
+                    </div>
                 </div>
-                <div class="feedback-title">Идеально подходят для спортсменов</div>  
-                <div class="feedback-subtitle">
-                        После тренировок всегда хочется быстро закинуться чем-то белков
-                </div>
-                <div class="feedback-name">Вадим Грачев</div>
             </div>
 
-            <div class="feedback-people">
-                <div class="round">
-                    <img src="./img/bg/review_photo.jpg" alt="Avatar">
+            <div class="feedback__people">
+                <div class="feedback__people-round">
+                    <a href="#" >
+                        <img src="./img/bg/review_photo.jpg" alt="Avatar" class="feedback__people-round1">
+                    </a>
+
                 </div>
-                <div class="round">
-                    <img src="./img/bg/review_2.jpg" alt="Avatar">
+                <div class="feedback__people-round">
+                    <a href="#">
+                        <img src="./img/bg/review_2.jpg" alt="Avatar" class="feedback__people-round2">
+                    </a>
+
                 </div>
-                <div class="round">
-                    <img src="./img/bg/review_1.jpg" alt="Avatar">
-                </div>  
+                <div class="feedback__people-round">
+                    <a href="#">
+                        <img src="./img/bg/review_1.jpg" alt="Avatar" class="feedback__people-round3">
+                    </a>
+
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -229,7 +268,7 @@
 
     <section class="section order">
         <div class="container">
-            <div class="title">Закажите доставку</div>
+            <div class="title">ЗАКАЖИТЕ ДОСТАВКУ</div>
             <div class="form">
                 <form action="" class="form__elem">
                     <div class="form__column">
@@ -266,23 +305,56 @@
                                 <div class="form__block-title">Этаж</div>
                                 <input type="text" class="form__input">
                             </label>
-                        </div> 
+                        </div>
                     </div>
                     <div class="form__column">
-                        <label class="form__block">
-                            <div class="form__block-title">Этаж</div>
-                            <textarea class="form__input form__input--textarea" ></textarea>
-                        </label>
-                    
+                        <div class="form__row">
+                            <label class="form__block">
+                                <div class="form__block-title">Коментарий</div>
+                                <textarea class="form__input form__input--textarea"></textarea>
+                            </label>
+                        </div>
+                        <div class="form__row-check">
+                            <input type="radio" class="radio" />
+                            <label for="radio">Потребуется сдача</label>
+                            <input type="radio" class="radio" />
+                            <label for="radio">Оплата по карте</label>
+                            <!-- <label class="form__block">
+                                <input type="radio" class="form__input">
+                                <div class="form__block-title">Потребуется сдача</div>
+                            </label>
+                            <label class="form__block">
+                                <input type="radio" class="form__input">
+                                <div class="form__block-title">Оплата по карте</div>
+                            </label>-->
+                        </div>
+                        <div class="form__row-check">
+                            <input type="checkbox" class="checkbox" id="checkbox" />
+                            <label for="checkbox">Не перезванивать</label>
+                        </div>
+                        <!-- <div class="form__row">
+                            <label class="form__block">
+                                <input type="checkbox" />
+                                <div class="checkbox__text">Не перезванивать</div>
+                            </label>
+                        </div>-->
+                        <div class="form__row">
+                            <a href="#" class="ordered__button">ЗАКАЗАТЬ</a>
+                            <a href="#" class="clear__button">Очистить</a>
+                        </div>
+
                     </div>
-                    <a href="#" class="order__button">ЗАКАЗАТЬ</a> 
-                </form>
             </div>
+
+        </div>
+        </form>
+        </div>
         </div>
     </section>
-    
+
     <section class="section map">
-       
+
     </section>
 </body>
+
 </html>

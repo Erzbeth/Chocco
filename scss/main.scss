@@ -4,12 +4,27 @@ $black:#2f3234;
 $green: #0f5a47;
 $dark-green: #0b4d3c;
 
+$regular: 'Alegreya-Reg', 'Arial', sans-serif;
+$bold: 'Alegreya-Bold', 'Arial', sans-serif;
+$extrabold: 'Alegreya-ExtraBold', 'Arial', sans-serif;
+$light: 'Alegreya-Light', 'Arial', sans-serif;
+$medium: 'Alegreya-Med', 'Arial', sans-serif;
+
+@function rem($px){
+    @return $px / 16px + 0rem;
+}
+
+$tablets: 768 px;
+$phones: 480px;
+$phones-small: 370px;
+
+
 //normalize
 @import "normalize";
 //setup
 //@import "layouts/normalize";
-@import "../layouts/base";
-//@import "layouts/fonts";
+@import "layouts/base";
+@import "layouts/fonts";
 //add files scss
 
 @import "header";
@@ -23,3 +38,4 @@ $dark-green: #0b4d3c;
 @import "title";
 @import "order";
 @import "form";
+@import "form-checkRadio";

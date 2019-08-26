@@ -2,16 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 24px;
+    //color: #fff;
 }
 
 .header__buttons{
     display: flex;
     align-items: center;
+
 }
 
-.welcome-logo{
+.header__logo{
     width: 54px;
-    height: 52px;
-    //font: 24pt MuseoSansCyr;
-    color: #fff;
+}
+.header__phone {
+    font-size: 24 px;
+}
+.header__phone-btn {
+    color: inherit;
+    font-size: 24px;
 }

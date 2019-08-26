@@ -1,7 +1,15 @@
 .welcome { 
 background: url('../img/bg/chocco-bg.png') center center / cover no-repeat;
 color: #fff;
+align-items: flex-start;
 }
 
+.welcome__container {
+    height: 100%;
+}
 
+.welcome__subtitle {
+    font-size: 21px;
+    margin-bottom: 32px;
+}
   
