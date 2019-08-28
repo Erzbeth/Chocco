@@ -2,6 +2,15 @@
 background: url('../img/bg/chocco-bg.png') center center / cover no-repeat;
 color: #fff;
 align-items: flex-start;
+
+    &:after{
+        width: 100%;
+        height: rem(435px);
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        background: url('../img/bg/berries.png') center center / contain no-repeat;
+    }
 }
 
 .welcome__container {

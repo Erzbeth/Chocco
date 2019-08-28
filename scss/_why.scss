@@ -1,5 +1,5 @@
 .why { 
-    background: url('../img/bg/why_bg.png') no-repeat;
+    background: url('../img/bg/why_bg.png') left center no-repeat;
  }
 
 .why__content-title {
@@ -34,37 +34,30 @@
 
    }
 }
-.why__item-wrapper {
-// display: table-cell;
-    //text-align: center;
-    
-    //justify-content: center;
-    align-items: center;
- 
-    //display: flex;
-}
+
 .why__img {
-    //height: 100px;
-   // width: 100px;
+    width: rem(125px);
+    height: rem(125px);
     background: $light-grey;
     border-radius: 50%;
-    align-self: center;
+    padding: 30px;
+    margin: 0 auto;
     position: relative;
-   
-    
 
-    .why__img-icon {
+    &:after{
+        width: 67px;
+        height: 21px;
+        background: url('../img/bg/why-points.png') center center / contain no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY (-50%);
+    }
+}
 
-        width: 70px;
-        height: 69px;
-        margin: 29px;
-        align-self: center;
-     }
-
-   //&:after {
-
-   // }
-  }
+.why__img-icon {
+    max-width: 30px;
+}
 
 .why__because {
     text-align: center;

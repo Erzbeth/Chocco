@@ -1,4 +1,48 @@
 .team {
     display: flex;
-    flex-direction: row;
-}
+   }
+   .team__list{
+       display: flex;
+       justify-content: space-between;
+       text-align: center;
+   }
+
+   .team__title {
+       color: yellow;
+   }
+
+   .team__item {
+       width: 24%;
+   }
+   .team__image {
+       min-width: 100%;
+   }
+   
+   .team__name {
+    font-size: rem(21px);
+    font-family: $regular;
+    font-weight: 600;
+    margin-bottom: rem(13px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:after {
+        content: '';
+        width: 9px;
+        height: 7px;
+    }
+   }
+
+   .team_position {
+       font-family: $regular;
+
+   }
+
+   .team__text {
+        height: 0;
+        overflow: hidden
+       p{
+           opacity: 0.8;
+           font-family: $light;
+       }
+   }

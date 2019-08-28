@@ -313,12 +313,13 @@ body {
   height: 100%; }
 
 body {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  color: #2f3234; }
+  color: #2f3234;
+  font-family: "Alegreya-Reg", "Arial", sans-serif; }
 
 .wrapper {
   position: relative;
@@ -353,7 +354,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 3.75rem;
-  font-size: 2.5rem; }
+  font-size: 3rem; }
 
 h3 {
   font-size: 2.25rem;
@@ -389,8 +390,22 @@ button {
   border: none; }
 
 @font-face {
-  font-family: 'Alegreya-Sans-Black';
-  src: url("../../fonts/AlegreyaSans-Black.ttf"); }
+  font-family: 'Alegreya Sans';
+  src: url("../fonts/subset-AlegreyaSans-Light.woff2") format("woff2"), url("../fonts/subset-AlegreyaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Alegreya-Bold';
+  src: url("../fonts/subset-AlegreyaSans-Bold.woff2") format("woff2"), url("../fonts/subset-AlegreyaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Alegreya-Light';
+  src: url("../fonts/subset-AlegreyaSans-Regular.woff2") format("woff2"), url("../fonts/subset-AlegreyaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 .header {
   display: -webkit-box;
@@ -402,7 +417,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 24px; }
+  padding-top: 1.5rem; }
 
 .header__buttons {
   display: -webkit-box;
@@ -413,14 +428,27 @@ button {
   align-items: center; }
 
 .header__logo {
-  width: 54px; }
+  width: 3.375rem; }
 
 .header__phone {
-  font-size: 24 px; }
+  font-size: 1.5rem; }
 
 .header__phone-btn {
   color: inherit;
-  font-size: 24px; }
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header__phone-btn:before {
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 6px;
+    font-family: "Alegreya-Reg", "Arial", sans-serif;
+    background: url("../img/phone_.png") center center/contain no-repeat; }
 
 .nav {
   display: -webkit-box;
@@ -468,7 +496,8 @@ button {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .welcome {
   background: url("../img/bg/chocco-bg.png") center center/cover no-repeat;
@@ -476,6 +505,13 @@ button {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start; }
+  .welcome:after {
+    width: 100%;
+    height: 27.1875rem;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    background: url("../img/bg/berries.png") center center/contain no-repeat; }
 
 .welcome__container {
   height: 100%; }
@@ -503,7 +539,10 @@ button {
     -ms-flex-direction: column;
     flex-direction: column; }
   .welcome__content .title {
-    font-size: 60px; }
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 22px;
+    display: block; }
   .welcome__content .welcome__content-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -536,11 +575,9 @@ button {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #0f5a47;
+  font-family: "Alegreya-Bold", "Arial", sans-serif;
   padding: 24px 32px;
   text-decoration: none; }
-
-a.ordered__button:hover {
-  background: #4479BA; }
 
 .about {
   display: -webkit-box;
@@ -588,7 +625,7 @@ a.ordered__button:hover {
   width: 54px; }
 
 .why {
-  background: url("../img/bg/why_bg.png") no-repeat; }
+  background: url("../img/bg/why_bg.png") left center no-repeat; }
 
 .why__content-title {
   -webkit-box-align: center;
@@ -623,25 +660,27 @@ a.ordered__button:hover {
   .why__item:last-child {
     margin-right: 0; }
 
-.why__item-wrapper {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
 .why__img {
+  width: 7.8125rem;
+  height: 7.8125rem;
   background: #f2f5f4;
   border-radius: 50%;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  padding: 30px;
+  margin: 0 auto;
   position: relative; }
-  .why__img .why__img-icon {
-    width: 70px;
-    height: 69px;
-    margin: 29px;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center; }
+  .why__img:after {
+    width: 67px;
+    height: 21px;
+    background: url("../img/bg/why-points.png") center center/contain no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY -50%;
+    -ms-transform: translateY -50%;
+    transform: translateY -50%; }
+
+.why__img-icon {
+  max-width: 30px; }
 
 .why__because {
   text-align: center; }
@@ -655,11 +694,48 @@ a.ordered__button:hover {
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex; }
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center; }
+
+.team__item {
+  width: 24%; }
+
+.team__image {
+  min-width: 100%; }
+
+.team__name {
+  font-size: 1.3125rem;
+  font-family: "Alegreya-Reg", "Arial", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .team__name:after {
+    content: '';
+    width: 9px;
+    height: 7px; }
+
+.team_position {
+  font-family: "Alegreya-Reg", "Arial", sans-serif; }
+
+.team__text p {
+  opacity: 0.8;
+  font-family: "Alegreya-Light", "Arial", sans-serif; }
 
 .feedback {
   background: url("../img/bg/review_bg.png") center center/cover no-repeat;
@@ -700,20 +776,8 @@ a.ordered__button:hover {
   display: flex; }
 
 .feedback-people {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-
-.feedback-people-round {
-  border-radius: 50%;
-  float: left;
-  overflow: hidden; }
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto; }
 
 .title {
   font-size: 48px;
@@ -734,7 +798,7 @@ a.ordered__button:hover {
   text-decoration: none; }
 
 a.clear__button:hover {
-  background: #4479BA; }
+  background: #00accf; }
 
 .form__elem {
   display: -webkit-box;
@@ -842,7 +906,7 @@ a.clear__button:hover {
   height: 22px;
   border: 1px solid #CDD1DA;
   border-radius: 50%;
-  background: #FFF; }
+  background: #fff; }
 
 .radio + label:after {
   content: '';

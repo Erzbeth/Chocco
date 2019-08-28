@@ -1,9 +1,8 @@
-@mixin header{
-    @include centerFlex;
+.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: rem(24px);
     //color: #fff;
 }
 
@@ -14,12 +13,23 @@
 }
 
 .header__logo{
-    width: 54px;
+    width: rem(54px);
 }
 .header__phone {
-    font-size: 24 px;
+    font-size: rem(24px);
 }
 .header__phone-btn {
     color: inherit;
-    font-size: 24px;
+    font-size: rem(24px);
+    display: flex;
+    align-items: center;
+
+    &:before{
+        content: '';
+        width: rem(12px);
+        height: rem(12px);
+        margin-right: 6px;
+        font-family: $regular;
+        background: url('../img/phone_.png') center center / contain no-repeat;
+    }
 }
