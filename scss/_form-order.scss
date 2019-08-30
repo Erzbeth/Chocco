@@ -11,6 +11,7 @@
     }
 }
 
+
 .form__row {
     display: flex;
 }
@@ -30,13 +31,15 @@
     border: none;
     padding: 8px 21px;
     width: 100%; 
-
+    outline: 0;
+    //outline: 2px solid #000;
+    border: solid 3px transparent;
     &--textarea {
         resize: none;
         height: 110px;  
     }
+    &:focus {
+        outline: 0;
+        border: solid 3px #dde3bd;
+    }
 }
-
-
-
-

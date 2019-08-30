@@ -15,21 +15,14 @@
     flex-direction: column; 
  
 }
-.title {
-    font-size: rem(36px);
-    text-align: left;
-    margin-bottom: 22px;
-    display: block;
-   
-    
-}
+
 .products__content-right {
     display: flex;
     align-items: center;
     width: 50%;
     flex-direction: column;
     flex: .5;
-    margin-left: 88px;
+    margin-left: rem(88px);
 }
 .products__about {
     display: flex;

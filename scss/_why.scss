@@ -8,13 +8,8 @@
     text-align: center;
     margin: 100px;
 }
-.title {
-    display: inline-flex;  
-}
-.why__subtitle {
-    width: inherit;
-    font-family: $regular;
-}
+
+
 
 
 .why__list {
@@ -69,13 +64,7 @@
     
     
   }
-.why__title {
-    font-size: rem(27px);
-    font-weight: bold;
-    margin-top: rem(35px);
-    margin-bottom: rem(30px);
-    
-  }
+
   .why__because-text {
       font-family: $regular;
   }

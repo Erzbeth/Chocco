@@ -12,15 +12,13 @@
 }
 .feedback__title{
     font-family: $medium;
-    font-size: 30px;
+    text-align: center;
+    font-size: rem(30px);
 }
 .feedback__wrapper-content1{
 margin-left: 25px; 
 }
-.feedback__subtitle{
-    margin: rem(10px);
-    color: #666666;
-}
+
 .feedback__name {
     margin-top: rem(10px);
     font-family: $medium;
