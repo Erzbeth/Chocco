@@ -4,13 +4,13 @@ body {
 }
 
 body {
-    font-size: 18px;
+    font-size: rem(18px);
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-   //@include ubuntu();
     color: $black; 
+    font-family: $regular;;
 }
 
 .wrapper {
@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    font-family: $bold;
 }
 
 h1,
@@ -72,6 +73,7 @@ ul {
 p {
     padding: 0;
     margin: 0;
+    font-family: $light;
 }
 
 footer {
@@ -86,4 +88,7 @@ footer {
 button {
     background: transparent;
     border: none;
+    font-family: $extrabold;
+    display: inline-block;
+    
 }

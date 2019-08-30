@@ -1,4 +1,40 @@
 @font-face {
-    font-family: 'Alegreya-Sans-Black';
-    src: url('../../fonts/AlegreyaSans-Black.ttf');
+    font-family: 'Alegreya Sans';
+    src: url('../fonts/subset-AlegreyaSans-Light.woff2') format('woff2'),
+        url('../fonts/subset-AlegreyaSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Alegreya-Bold';
+    src: url('../fonts/subset-AlegreyaSans-Bold.woff2') format('woff2'),
+        url('../fonts/subset-AlegreyaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya-Light';
+    src: url('../fonts/subset-AlegreyaSans-Regular.woff2') format('woff2'),
+        url('../fonts/subset-AlegreyaSans-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya-ExtraBold';
+    src: url('../fonts/subset-AlegreyaSans-Bold') format('woff2'),
+        url('../fonts/subset-AlegreyaSans-Bold.woff') format('woff');
+        font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya-Medium';
+    src: url('../fonts/subset-AlegreyaSans-Medium.woff2') format('woff2'),
+        url('../fonts/subset-AlegreyaSans-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+

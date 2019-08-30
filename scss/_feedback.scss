@@ -10,11 +10,21 @@
     justify-content: space-around;
 
 }
+.feedback__title{
+    font-family: $medium;
+    font-size: 30px;
+}
+.feedback__wrapper-content1{
+margin-left: 25px; 
+}
 .feedback__subtitle{
-    margin: 10px;
+    margin: rem(10px);
+    color: #666666;
 }
 .feedback__name {
-    margin-top: 10px;
+    margin-top: rem(10px);
+    font-family: $medium;
+    color: #666666;
 }
 .feedback__wrapper1 {
     display: flex;
@@ -35,7 +45,27 @@
     
 
 }
+.feedback__people-round {
+    width: rem(90px);
+    height: rem(90px);
+    overflow: hidden;
+    margin-right: rem(20px);
+    border-radius: 50%;
+    border: 8px solid transparent;
+}
+.feedback__people-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 
+
+}
 .feedback__avatar {
-    @include square(100px, $radius: 4px);
-  }
+    //max-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    
+}

@@ -8,9 +8,9 @@ $white: #fff;
 
 $regular: 'Alegreya-Reg', 'Arial', sans-serif;
 $bold: 'Alegreya-Bold', 'Arial', sans-serif;
-$extrabold: 'Alegreya-ExtraBold', 'Arial', sans-serif;
 $light: 'Alegreya-Light', 'Arial', sans-serif;
-$medium: 'Alegreya-Med', 'Arial', sans-serif;
+$extrabold: 'Alegreya-ExtraBold', 'Arial', sans-serif;
+$medium: 'Alegreya-Medium', 'Arial', sans-serif;
 
 @function rem($px){
     @return $px / 16px + 0rem;
@@ -38,7 +38,9 @@ $phones-small: 370px;
 @import "team";
 @import "feedback";
 @import "title";
-@import "order";
-@import "form";
+@import "order-form";
 @import "form-checkRadio";
-@import "mixins";
+@import "subtitle";
+@import "products";
+
+

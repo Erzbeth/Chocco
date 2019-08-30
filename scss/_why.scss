@@ -1,5 +1,5 @@
 .why { 
-    background: url('../img/bg/why_bg.png') no-repeat;
+    background: url('../img/bg/why_bg.png') left center no-repeat;
  }
 
 .why__content-title {
@@ -9,62 +9,60 @@
     margin: 100px;
 }
 .title {
-    display: inline-flex;
-
-    .why__text {
-        width: inherit;
-    }
+    display: inline-flex;  
 }
-    
+.why__subtitle {
+    width: inherit;
+    font-family: $regular;
+}
 
 
 .why__list {
     display: flex;
     align-items: center;
+    
 
 }
 .why__item {
    flex: 1;
-   //margin-right: 35px;
+   margin-right: rem(80px);
    text-align: center;
    align-items: center;
+  
 
    &:last-child {
+       margin-top: 20px;
        margin-right: 0;
-
+        .why__img:after {
+            display: none;
+        }
    }
 }
-.why__item-wrapper {
-// display: table-cell;
-    //text-align: center;
-    
-    //justify-content: center;
-    align-items: center;
- 
-    //display: flex;
-}
+
 .why__img {
-    //height: 100px;
-   // width: 100px;
     background: $light-grey;
     border-radius: 50%;
-    align-self: center;
+    width: rem(125px);
+    height: rem(125px);
+    padding: rem(30px);
+    margin: 0 auto;
     position: relative;
-   
-    
 
-    .why__img-icon {
+    &:after{
+        content: '';
+        width: rem(67px);
+        height: rem(21px);
+        background: url('../img/bg/why-points.png') center center / contain no-repeat;
+        position: absolute;
+        left: 150%;
+        top: 50%;
+        transform: translateY (-50%);
+    }
+}
 
-        width: 70px;
-        height: 69px;
-        margin: 29px;
-        align-self: center;
-     }
-
-   //&:after {
-
-   // }
-  }
+.why__img-icon {
+    max-width: rem(30px);
+}
 
 .why__because {
     text-align: center;
@@ -72,10 +70,13 @@
     
   }
 .why__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
-    margin-top: 35px;
-    margin-bottom: 25px;
+    margin-top: rem(35px);
+    margin-bottom: rem(30px);
     
+  }
+  .why__because-text {
+      font-family: $regular;
   }
 

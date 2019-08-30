@@ -1,4 +1,49 @@
-.team {
+.team__list{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team__item {
+    width: 24%;
+}
+.team__image {
+    max-width: 100%;
+}
+
+.team__name {
+    font-size: rem(21px);
+    font-family: $medium;
+    margin-bottom: rem(13px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+
+    &:after {
+        content: '';
+        margin-left: rem(5px);
+        align-items: center; 
+//triangle
+        border-left: rem(7px) solid transparent;
+        border-right: rem(7px) solid transparent;/* Прозрачные границы */
+        border-bottom: rem(9px) solid $green;
+    }
+}
+
+.team_position {
+    font-family: $regular;
+
+}
+
+.team__text {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden
+    p{
+        opacity: .8;
+        font-family: $light;
+    }
 }
