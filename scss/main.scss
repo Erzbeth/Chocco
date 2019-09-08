@@ -6,27 +6,36 @@ $green: #0f5a47;
 $dark-green: #0b4d3c;
 $white: #fff;
 
+
 $regular: 'Alegreya-Reg', 'Arial', sans-serif;
 $bold: 'Alegreya-Bold', 'Arial', sans-serif;
 $light: 'Alegreya-Light', 'Arial', sans-serif;
 $extrabold: 'Alegreya-ExtraBold', 'Arial', sans-serif;
 $medium: 'Alegreya-Medium', 'Arial', sans-serif;
 
-@function rem($px){
+
+
+@function rem($px) {
     @return $px / 16px + 0rem;
-}
+  }
+
+
+$z-fixed-menu: 100;
 
 $tablets: 768 px;
 $phones: 480px;
-$phones-small: 370px;
+
 
 
 //normalize
 @import "normalize";
+
 //setup
 //@import "layouts/normalize";
+@import "layouts/media";
 @import "layouts/base";
 @import "layouts/fonts";
+
 //add files scss
 
 @import "header";
@@ -38,13 +47,13 @@ $phones-small: 370px;
 @import "team";
 @import "feedback";
 @import "title";
-@import "order";
-@import "form-order";
+@import "order-form";
+@import "form";
+@import "menu-acco";
+@import "menu";
 @import "form-checkRadio";
 @import "subtitle";
 @import "products";
-@import "map";
-@import "about";
-
+@import "fixed-menu";
 
 

@@ -1,15 +1,28 @@
 .why { 
     background: url('../img/bg/why_bg.png') left center no-repeat;
- }
+
+    &:after{
+        content:'';
+        width: 100%;
+        height: rem(435px);
+        position: absolute;
+        bottom: rem(-150px);
+        left: 0px;
+        background: url('../img/bg/raspberry.png') left center no-repeat;
+    }
+}
 
 .why__content-title {
     
     align-items: center;
     text-align: center;
-    margin: 100px;
+    margin: rem(100px);
 }
 
-
+.why__subtitle {
+    width: inherit;
+    font-family: $regular;
+}
 
 
 .why__list {
@@ -26,7 +39,7 @@
   
 
    &:last-child {
-       margin-top: 20px;
+       margin-top: rem(20px);
        margin-right: 0;
         .why__img:after {
             display: none;
@@ -42,9 +55,10 @@
     padding: rem(30px);
     margin: 0 auto;
     position: relative;
+    
 
     &:after{
-        content: '';
+        content:'';
         width: rem(67px);
         height: rem(21px);
         background: url('../img/bg/why-points.png') center center / contain no-repeat;
@@ -56,7 +70,7 @@
 }
 
 .why__img-icon {
-    max-width: rem(30px);
+    max-width: 100%;
 }
 
 .why__because {
@@ -64,7 +78,13 @@
     
     
   }
-
+.why__title {
+    font-size: rem(27px);
+    font-weight: bold;
+    margin-top: rem(35px);
+    margin-bottom: rem(30px);
+    
+  }
   .why__because-text {
       font-family: $regular;
   }

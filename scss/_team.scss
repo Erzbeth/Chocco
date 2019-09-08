@@ -1,8 +1,12 @@
+
+
+
 .team__list{
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
+
 
 .team__item {
     width: 24%;
@@ -41,9 +45,16 @@
 .team__text {
     flex-direction: column;
     height: 0;
-    overflow: hidden
-    p{
+    overflow: hidden;
+    display: block;
+    transition: height .3s;
+    p {
         opacity: .8;
         font-family: $light;
     }
+    
+}
+.team__text.active {
+    height: 100px;
+    
 }

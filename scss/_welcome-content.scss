@@ -10,7 +10,11 @@
         display: flex;
         flex-direction: column;
     }
-    
+    .welcome__title {
+        font-size: rem(60px);
+        text-align: left;
+        margin-bottom: rem(22px);
+        display: block;
        
         
     }
@@ -21,9 +25,63 @@
         width: 50%;
         flex-direction: column;
         flex:.3;
+       
     }
 }
-
+.welcome__title-wrapper {
+    margin: auto;
+    flex:.3;
+}
+.ordered__button {
+    -webkit-border-radius: rem(4px);
+    -moz-border-radius: rem(4px);
+    border-radius: rem(50px);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    //-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+   // -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  //  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: $green;
+    font-family: $extrabold;
+    padding: rem(24px) rem(32px);
+    text-decoration: none;
+  }
   
 
+.about {
+    display: flex;
+    align-items: center;
+    margin: rem(4px); /* Отступы вокруг элемента */
+    //margin: 20%; 
+    padding: rem(10px); /* Поля вокруг текста */
+    justify-content: space-between;
+    flex:.3;
+}
 
+.about__list {
+    display: flex;
+    align-items: center;
+}
+
+
+.about__item {
+    display: flex;
+    align-items: center;
+    margin: rem(4px);
+    color: whitef;
+    //-webkit-text-stroke: 0.5px white;
+    //-webkit-text-fill-color:transparent;
+}
+
+
+.about__item-text{
+    color: #fff;
+    font-size: rem(16px);
+}
+
+.aboutImage {
+     float: left;
+    margin: rem(2px);
+    width: rem(54px);
+
+}

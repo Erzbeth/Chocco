@@ -2,32 +2,5 @@
     font-size: rem(48px);
    text-align: center;
    font-family: $bold;
-
-   .welcome__title {
-    font-size: 60px;
-    text-align: left;
-    margin-bottom: 22px;
-    display: block;
-    }
-    .products__title {
-        font-size: rem(30px);
-        text-align: left;
-        margin-bottom: rem(22px);
-        display: block;
-    }
-    .why__title {
-        font-size: rem(27px);
-        font-weight: bold;
-        margin-top: rem(35px);
-        margin-bottom: rem(30px);
-        
-    }
-    .welcome__title-wrapper {
-        margin: auto;
-        flex:.3;
-    }
-
-    .why__title {
-        display: inline-flex;  
-    }
+   display: inline-flex;  
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--width=device-width, initial-scale=1.0" - адаптив, width=фикс. число для статики. initial-scale=1.0 - пересчет размеров при смене ориентации-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/main.css" />
     <title>Chocco</title>
@@ -43,7 +44,6 @@
                     </nav>
                 </div>
                 <div class="header__phone">
-                    <img src="" alt="">
                     <a href="tel:88009039090" class="header__phone-btn">8 800 903 90 90</a>
                 </div>
             </header>
@@ -53,7 +53,7 @@
 
                     <div class="welcome__title-wrapper">
                         <div class="welcome__title title">
-                            <h2 class="title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
+                            <h2 class="welcome__title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h2>
                         </div>
                         <div class="welcome__subtitle subtitle">
                             Наши батончики идеально подходят для тех, кто следитза своим здоровьем
@@ -152,8 +152,8 @@
                 <img src="./img/bg/products-chocco.png" alt="Chocco">
             </div>
             <div class="products__content-right">
-                <div class="products__title title">
-                    <h2 class="products__title">БАТОНЧИК "МОРСКИЕ ВОДОРОСЛИ"</h2>
+                <div class="products__title-wrapper">
+                    <div class="products__title">БАТОНЧИК "МОРСКИЕ ВОДОРОСЛИ"</div>
                 </div>
                 <div class="products__about">
                     <div class="products__composed">
@@ -191,14 +191,14 @@
     <section class="section team">
 
         <div class="container">
-            <h2 class="team__title title">КОМАНДА</h2>
-            <ul class="team__list">
+            <h2 class="title">КОМАНДА</h2>
+            <ul id="team__list">
                 <li class="team__item">
                     <div class="team__pic">
                         <img src="./img/bg/team-bg1.jpg" alt="" class="team__image">
                     </div>
-                    <a class="team__name">Борис Федорович</a>
-                    <div class="team text">
+                    <a href = '#' class="team__name">Борис Федорович</a>
+                    <div class="team__text active">
                         <div class="team_position">Главный технолог</div>
                         <p>Отвечает за вкусовые качества и калорийность. </p>
                     </div>
@@ -207,9 +207,9 @@
                     <div class="team__pic">
                         <img src="./img/bg/team-bg2.jpg" alt="" class="team__image">
                     </div>
-                    <a class="team__name">Алла Иванова</a>
+                    <a href = '#' class="team__name">Алла Иванова</a>
 
-                    <div class="team text">
+                    <div class="team__text">
                         <div class="team_position">Специалист по упаковке </div>
                         <p>Автор запоминающегося стиля наших батончиков. </p>
                     </div>
@@ -218,8 +218,8 @@
                     <div class="team__pic">
                         <img src="./img/bg/team-bg3.jpg" alt="" class="team__image">
                     </div>
-                    <a class="team__name">Кирилл матросов</a>
-                    <div class="team text">
+                    <a href = '#' class="team__name">Кирилл матросов</a>
+                    <div class="team__text">
 
                         <div class="team_position">Оператор</div>
                         <p>С радостью поможет подобрать батончики и оформить заказ. </p>
@@ -229,8 +229,8 @@
                     <div class="team__pic">
                         <img src="./img/bg/team-bg4.jpg" alt="" class="team__image">
                     </div>
-                    <a class="team__name">Мила Рыжкова</a>
-                    <div class="team text">
+                    <a href = '#' class="team__name">Мила Рыжкова</a>
+                    <div class="team__text">
 
                         <div class="team_position">PR, маркетинг </div>
                         <p>По всем вопросам сотрудничества и рекламы писать только Миле. </p>
@@ -241,8 +241,51 @@
     </section>
 
     <section class="section menu">
-        <img src="" alt="" class="menu__title">
-<div>Меню - сегодня сделаю</div>
+        <div class="title">МЕНЮ</div>
+        <ul class="menu-acco">
+            <li class="menu-acco__item">
+                <a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/meats.jpg')">
+                    <div class="menu-acco__trigger-text">Батончики с молоком</div>
+                </a>
+                <div class="menu-acco__content">
+                    <div class="menu-acco__text">
+                        Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                        полезнее.
+                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно,
+                        что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит,
+                        но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </div>
+                </div>
+            </li>
+            <li class="menu-acco__item">
+                <a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/vegans.jpg')">
+                    <div class="menu-acco__trigger-text">С мёдом и фруктами</div>
+                </a>
+                <div class="menu-acco__content">
+                    <div class="menu-acco__text">
+                        Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                        полезнее.
+                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно,
+                        что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит,
+                        но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </div>
+                </div>
+            </li>
+            <li class="menu-acco__item">
+                <a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/diets.jpg')">
+                    <div class="menu-acco__trigger-text">Дикие ягоды</div>
+                </a>
+                <div class="menu-acco__content">
+                    <div class="menu-acco__text">
+                        Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и
+                        полезнее.
+                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно,
+                        что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит,
+                        но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section class="section feedback">
@@ -250,51 +293,55 @@
             <h2 class="feedback title">Отзывы</h2>
             <div class="feedback__content">
 
-                <div class="feedback__wrapper1">
-                    <div class="feedback__image">
-                        <img src="./img/bg/review_photo.jpg" alt="Avatar">
-                    </div>
-                    <div class="feedback__wrapper-content1">
-                        <div class="title feedback__title">Лучший перекус</div>
-                        <div class="feedback__subtitle subtitle">
-                            Я ем малыми пропорциями, но часто. Это повышает мою продуктивность в разы. В течение дня
-                            сижу за
-                            компьютером
-                            и часто отходить в кафе или на кухню просто не могу себе позволить.
-                            А батончик - он всегда под рукой. Это приятно и удобно.
-                        </div>
-                        <div class="feedback__name">Алена Хмельницкая</div>
-                    </div>
-                </div>
 
-              <!-- <div class="feedback__wrapper2">
-                    <div class="feedback__image">
-                        <img src="./img/bg/review_2.jpg" alt="Avatar">
-                    </div>
-                    <div class="feedback__wrapper-content">
-                        <div class="title feedback__title">Лучшие батончики премиум уровня</div>
-                        <div class="feedback__subtitle">
-                            Батончики понравились. На мой взгляд слегка завышена цена по ср
+
+               <ul class="feedback__list">
+                    <li class="feedback__list-people active">
+                        <div class="feedback__image">
+                            <img src="./img/bg/review_photo.jpg" alt="Avatar">
                         </div>
-                        <div class="feedback__name">Мария Орлова</div>
-                    </div>
-                </div>
-                <div class="feedback__wrapper3">
-                    <div class="feedback__image">
-                        <img src="./img/bg/review_1.jpg" alt="Avatar">
-                    </div>
-                    <div class="feedback__wrapper-content">
-                        <div class="title feedback__title">Идеально подходят для спортсменов</div>
-                        <div class="feedback__subtitle">
-                            После тренировок всегда хочется быстро закинуться чем-то белков
+                        <div class="feedback__wrapper-content1">
+                            <div class="title feedback__title">Лучший перекус</div>
+                            <div class="feedback__subtitle subtitle">
+                                Я ем малыми пропорциями, но часто. Это повышает мою продуктивность в разы. В течение дня
+                                сижу за
+                                компьютером
+                                и часто отходить в кафе или на кухню просто не могу себе позволить.
+                                А батончик - он всегда под рукой. Это приятно и удобно.
+                            </div>
+                            <div class="feedback__name">Алена Хмельницкая</div>
                         </div>
-                        <div class="feedback__name">Вадим Грачев</div>
-                    </div>
-                </div>-->
+                    </li>
+                    <li class="feedback__list-people">
+                        <div class="feedback__image">
+                            <img src="./img/bg/review_2.jpg" alt="Avatar">
+                        </div>
+                        <div class="feedback__wrapper-content">
+                            <div class="title feedback__title">Лучшие батончики премиум уровня</div>
+                            <div class="feedback__subtitle">
+                                Батончики понравились. На мой взгляд слегка завышена цена по ср
+                            </div>
+                            <div class="feedback__name">Мария Орлова</div>
+                        </div>
+                    </li>
+                    <li class="feedback__list-people">
+                        <div class="feedback__image">
+                            <img src="./img/bg/review_1.jpg" alt="Avatar">
+                        </div>
+                        <div class="feedback__wrapper-content">
+                            <div class="title feedback__title">Идеально подходят для спортсменов</div>
+                            <div class="feedback__subtitle">
+                                После тренировок всегда хочется быстро закинуться чем-то белков
+                            </div>
+                            <div class="feedback__name">Вадим Грачев</div>
+                        </div>
+                    </li>
+                </ul>
+
             </div>
 
             <ul class="feedback__people">
-                <li class="feedback__people-round">
+                <li class="feedback__people-round active">
                     <a href="#" class="feedback__people-img">
                         <img src="./img/bg/review_photo.jpg" alt="Avatar" class="feedback__avatar">
                     </a>
@@ -368,48 +415,99 @@
                                 <textarea class="form__input form__input--textarea"></textarea>
                             </label>
                         </div>
-                        <div class="form__row-check">
-                            <input id="radio_one" type="radio" class="radio" />
-                            <label for="radio_one">Потребуется сдача</label>
-                            <input id="radio_two"type="radio" class="radio" />
-                            <label for="radio_two">Оплата по карте</label>
-                        <!-- <label class="form__block">
-                                <input type="radio" class="form__input">
-                                <div class="form__block-title">Потребуется сдача</div>
-                            </label>
-                            <label class="form__block">
-                                <input type="radio" class="form__input">
-                                <div class="form__block-title">Оплата по карте</div>
-                            </label>-->    
-                        </div>
-                        <div class="form__row-check">
-                            <input type="checkbox" class="checkbox" id="checkbox" />
-                            <label for="checkbox">Не перезванивать</label>
-                        </div>
-                        <!-- <div class="form__row">
-                            <label class="form__block">
-                                <input type="checkbox" />
-                                <div class="checkbox__text">Не перезванивать</div>
-                            </label>
-                        </div>-->
-                        <div class="form__row">
-                            <a href="#" class="ordered__button">ЗАКАЗАТЬ</a>
-                            <a href="#" class="clear__button">Очистить</a>
+                        <div class="order__form-buttons">
+                            <div class="form__row-check">
+                                <input id="radio_one" type="radio" class="radio" />
+                                <label for="radio_one">Потребуется сдача</label>
+                                <input id="radio_two" type="radio" class="radio" />
+                                <label for="radio_two">Оплата по карте</label>
+
+                            </div>
+                            <div class="form__row-check">
+                                <input type="checkbox" class="checkbox" id="checkbox" />
+                                <label for="checkbox">Не перезванивать</label>
+                            </div>
+
+                            <div class="form__row">
+                                <a href="#" class="ordered__button button">ЗАКАЗАТЬ</a>
+                                <a href="#" class="clear__button">Очистить</a>
+                            </div>
+
                         </div>
 
                     </div>
+                </form>
             </div>
-
-        </div>
-        </form>
-        </div>
         </div>
     </section>
 
     <section class="section map">
-        <div class="container">
 
-        </div>   
     </section>
+
+
+    <div class="chocco-menu" id="chocco-menu">
+        <div class="chocco-menu__logo"><a class="logo" href="#"><img src="./img/icons/logo.svg"></a></div>
+        <div class="chocco-menu__items">
+            <nav class="nav nav_chocco">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="" data-scroll-to="1">о нас</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="" data-scroll-to="2">бургеры</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="" data-scroll-to="3">команда</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="" data-scroll-to="4">меню</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="" data-scroll-to="5">отзывы</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="" data-scroll-to="7">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><a class="chocco-menu__close" href="#">
+            <svg class="chocco-menu__close-icon">
+                <use xlink:href="./img/sprite/sprite.svg#close"></use>
+            </svg></a>
+    </div>
+
+
+
+    <ul class="fixed-menu">
+        <li class="fixed-menu__item fixed-menu__item--active">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+        <li class="fixed-menu__item ">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+        <li class="fixed-menu__item ">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+        <li class="fixed-menu__item ">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+        <li class="fixed-menu__item ">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+        <li class="fixed-menu__item ">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+        <li class="fixed-menu__item ">
+            <button type="button" class="fixed-menu__dot"></button>
+        </li>
+    </ul>
+
+
+    <ul class="fixed-menu">
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="0"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="1"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="2"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="3"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="4"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="5"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="6"></a></li>
+        <li class="fixed-menu__item"><a class="fixed-menu__link" href="" data-scroll-to="7"></a></li>
+    </ul>
 </body>
+
 </html>

@@ -12,27 +12,35 @@
 }
 .feedback__title{
     font-family: $medium;
-    text-align: center;
     font-size: rem(30px);
 }
 .feedback__wrapper-content1{
-margin-left: 25px; 
+margin-left: rem(25px); 
 }
-
+.feedback__subtitle{
+    margin: rem(10px);
+    color: #666666;
+}
 .feedback__name {
     margin-top: rem(10px);
     font-family: $medium;
     color: #666666;
 }
-.feedback__wrapper1 {
-    display: flex;
+.feedback__list {
+    //display: none;
+    
 }
-.feedback__wrapper2 {
+
+.feedback__list-people {
     display: flex;
+    
 }
-.feedback__wrapper3 {
-    display: flex;
-}
+
+
+
+
+
+
 
 .feedback-people {
     flex-basis: auto;
@@ -49,7 +57,7 @@ margin-left: 25px;
     overflow: hidden;
     margin-right: rem(20px);
     border-radius: 50%;
-    border: 8px solid transparent;
+    border: rem(8px) solid transparent;
 }
 .feedback__people-img {
     display: flex;
