@@ -16,12 +16,14 @@
     
     align-items: center;
     text-align: center;
-    margin: rem(100px);
+    margin-bottom: rem(57px);
 }
 
 .why__subtitle {
     width: inherit;
     font-family: $regular;
+    width: 50%; 
+    margin: 0 auto;
 }
 
 
@@ -32,15 +34,10 @@
 
 }
 .why__item {
-   flex: 1;
-   margin-right: rem(80px);
+   width: 30%;
    text-align: center;
    align-items: center;
-  
-
    &:last-child {
-       margin-top: rem(20px);
-       margin-right: 0;
         .why__img:after {
             display: none;
         }
@@ -86,6 +83,8 @@
     
   }
   .why__because-text {
-      font-family: $regular;
+      p {
+        font-family: $regular;
+      }
   }
 

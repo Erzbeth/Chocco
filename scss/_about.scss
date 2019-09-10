@@ -1,0 +1,38 @@
+.about {
+    display: flex;
+    align-items: center;
+    margin: rem(4px); /* Отступы вокруг элемента */
+    //margin: 20%; 
+    padding: rem(10px); /* Поля вокруг текста */
+    justify-content: space-between;
+    flex:.3;
+}
+
+.about__list {
+    display: flex;
+    align-items: center;
+}
+
+.about__image {
+width: rem(50px);
+height: rem(42px);
+flex-shrink: 0;
+margin-right: rem(7px);
+}
+
+.about__pic{
+min-width: 100%;
+}
+
+.about__item {
+    display: flex;
+    align-items: center;
+    color: #fff;;
+    //-webkit-text-stroke: 0.5px white;
+    //-webkit-text-fill-color:transparent;
+}
+
+
+.about__item-text{
+    font-size: rem(16px);
+}

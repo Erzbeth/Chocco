@@ -43,45 +43,9 @@
     background: #fff;
     color: $green;
     font-family: $extrabold;
-    padding: rem(24px) rem(32px);
+    padding: rem(18px) rem(32px);
     text-decoration: none;
   }
   
 
-.about {
-    display: flex;
-    align-items: center;
-    margin: rem(4px); /* Отступы вокруг элемента */
-    //margin: 20%; 
-    padding: rem(10px); /* Поля вокруг текста */
-    justify-content: space-between;
-    flex:.3;
-}
 
-.about__list {
-    display: flex;
-    align-items: center;
-}
-
-
-.about__item {
-    display: flex;
-    align-items: center;
-    margin: rem(4px);
-    color: whitef;
-    //-webkit-text-stroke: 0.5px white;
-    //-webkit-text-fill-color:transparent;
-}
-
-
-.about__item-text{
-    color: #fff;
-    font-size: rem(16px);
-}
-
-.aboutImage {
-     float: left;
-    margin: rem(2px);
-    width: rem(54px);
-
-}

@@ -1,18 +1,22 @@
-/*.menu-acco {
+.menu-acco {
 	position: absolute;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	@extend %clearfix;
 }
-
+.menu__title {
+	position: absolute;
+	left: rem(80px);
+	top: rem(100px);
+	color: #fff;
+}
 .menu-acco__item {
 	float: left;
 	height: 100%;
 
 	&.active {
 		.menu-acco__trigger-text {
-			color: $yellow;
+
 		}
 	}
 }
@@ -22,7 +26,6 @@
 	display: block;
 	height: 100%;
 	float: left;
-	@include cover;
 	text-decoration: none;
   position: relative;
   
@@ -34,7 +37,6 @@
 .menu-acco__trigger-text {
 	font-size: rem(40px);
 	color: #fff;
-	@include gagalin;
 	text-align: center;
 	white-space: nowrap;
   position: absolute;
@@ -58,7 +60,6 @@
 }
 
 .menu-acco__text {
-	@include ubuntu(light);
 	font-size: rem(14px);
 	color: #fff;
 	padding: rem(60px) rem(30px);
@@ -69,4 +70,4 @@
   @include phones {
     padding: rem(25px) rem(15px);
   }
-}*/
+}

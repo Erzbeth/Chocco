@@ -1,5 +1,5 @@
 .feedback {
-    background: url('../img/bg/review_bg.png') center center / cover no-repeat;
+ 
     display: flex;
 
 }
@@ -14,11 +14,10 @@
     font-family: $medium;
     font-size: rem(30px);
 }
-.feedback__wrapper-content1{
+.feedback__wrapper-content{
 margin-left: rem(25px); 
 }
 .feedback__subtitle{
-    margin: rem(10px);
     color: #666666;
 }
 .feedback__name {
@@ -28,26 +27,29 @@ margin-left: rem(25px);
 }
 .feedback__list {
     //display: none;
-    
+    background: $light-grey;
+    margin-bottom: rem(25px);
 }
 
 .feedback__list-people {
-    display: flex;
+    display: none;
+    &.active {
+        display: flex;
+    }
     
 }
 
+.feedback__image {
+    min-height: rem(260px);
+    overflow: hidden;
+    flex-shrink: 0;
+}
 
-
-
-
-
-
-.feedback-people {
-    flex-basis: auto;
-   // display: flex;
-
-  //  flex-direction: row;
-  //  justify-content: space-around;
+.feedback__people {
+    display: flex;
+    justify-content: center;
+    //flex-direction: row;
+  
     
 
 }
