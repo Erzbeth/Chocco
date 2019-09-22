@@ -22,7 +22,17 @@ $medium: 'Alegreya-Medium', 'Arial', sans-serif;
 
 $z-fixed-menu: 100;
 
-$tablets: 768 px;
+$tablets: 768px;
+.header {display: none;}
+		.container {max-width: 450 px; flex-direction: column;}
+		.welcome__title-wrapper {width: 100%; flex-direction: column;}
+		.welcome__content {
+			width: calc(100% / 2 - 20px);
+		}
+
+		.why__list{
+			width: 100%;
+		}
 $phones: 480px;
 
 

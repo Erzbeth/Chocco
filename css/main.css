@@ -1,4 +1,27 @@
 @charset "UTF-8";
+.header {
+  display: none; }
+
+.container {
+  max-width: 450 px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.welcome__title-wrapper {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.welcome__content {
+  width: calc(100% / 2 - 20px); }
+
+.why__list {
+  width: 100%; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -310,12 +333,14 @@ template {
 
 html {
   font-size: 16px; }
-  @media screen and (max-width: 768 px) {
+  @media screen and (max-width: 768px) {
     html {
       font-size: 0.875rem; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 0.8125rem; } }
+      font-size: 0.8125rem; }
+      html .welcome__content {
+        width: 100%; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -970,7 +995,9 @@ button {
   position: relative; }
   @media screen and (max-width: 480px) {
     .menu-acco__trigger {
-      width: 3.125rem; } }
+      width: 3.125rem; }
+      .menu-acco__trigger .welcome__content {
+        width: 100%; } }
 
 .menu-acco__trigger-text {
   font-size: 2.5rem;
@@ -989,7 +1016,9 @@ button {
   margin-top: -1.25rem; }
   @media screen and (max-width: 480px) {
     .menu-acco__trigger-text {
-      font-size: 1.625rem; } }
+      font-size: 1.625rem; }
+      .menu-acco__trigger-text .welcome__content {
+        width: 100%; } }
 
 .menu-acco__content {
   height: 100%;
@@ -1007,7 +1036,9 @@ button {
   display: none; }
   @media screen and (max-width: 480px) {
     .menu-acco__text {
-      padding: 1.5625rem 0.9375rem; } }
+      padding: 1.5625rem 0.9375rem; }
+      .menu-acco__text .welcome__content {
+        width: 100%; } }
 
 .menu {
   background: url("../img/bg/menu-bg.png") 50% no-repeat;
